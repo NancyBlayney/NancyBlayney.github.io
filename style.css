@@ -3,9 +3,10 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: black;
+  font-weight: 10;
 }
 
-a{
+a {
 	color: white;
 }
 
@@ -29,7 +30,7 @@ a .fa:hover{
   box-sizing: border-box; 
   background-color: black;
   color: white;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Amatic SC', 'Courier', monospace;
 }
 
 .container:after{
@@ -78,14 +79,14 @@ a .fa:hover{
 
 .home {
 	width: 40%;
-	box-shadow: inset 0 0 0 1000px rgba(35,227,161, .7);
+	box-shadow: inset 0 0 0 1000px rgba(35,227,161, .6);
 	background: url(images/home.png); 
 	background-size: cover;
 	max-height: 100%;
 }
 
 .home:hover{
-	box-shadow: inset 0 0 0 1000px rgba(35,227,161, .6);
+	box-shadow: inset 0 0 0 1000px rgba(35,227,161, .75);
 }
 
 .home-content {
@@ -104,17 +105,18 @@ a .fa:hover{
 	left: 25%;
 	width: 50%;
 	z-index: 10;
+	overflow: hidden;
 }
 
 .about {
-	box-shadow: inset 0 0 0 1000px rgba(35,197,227, .7);
+	box-shadow: inset 0 0 0 1000px rgba(15,177,224, .6);
 	background: url(images/about.png); 
 	background-size: cover;
 	width: 59%;
 }
 
 .about:hover{
-	box-shadow: inset 0 0 0 1000px rgba(35,197,227, .6);
+	box-shadow: inset 0 0 0 1000px rgba(15,177,224, .75);
 }
 
 .about-content {
@@ -122,15 +124,17 @@ a .fa:hover{
 	margin: 0 auto;
 	margin-top: 3%;
 	width: 85%;
+	font-weight: bold;
 }
 
 .about h3{
 	margin: 3%;
+	font-size: 1.4em;
 }
 
 .about p{
-	font-size: .9em;
 	margin: 4%;
+	font-size: 1.3em;
 }
 
 #red{
@@ -144,7 +148,7 @@ a .fa:hover{
 
 .skills {
 	background-color: #fb6565;
-	box-shadow: inset 0 0 0 1000px rgba(251,101,101, .7);
+	box-shadow: inset 0 0 0 1000px rgba(251,101,101, .6);
 	background: url(images/skills.png); 
 	background-size: cover;
 	width: 32%
@@ -155,19 +159,19 @@ a .fa:hover{
 }
 
 .skills:hover{
-	box-shadow: inset 0 0 0 1000px rgba(251,101,101, .6);
+	box-shadow: inset 0 0 0 1000px rgba(251,101,101, .75);
 }
 
 .github {
 	background-color: #ffa500;
-	box-shadow: inset 0 0 0 1000px rgba(255,165,0, .7);
+	box-shadow: inset 0 0 0 1000px rgba(255,165,0, .6);
 	background: url(images/github.png); 
 	background-size: cover;
 	width: 37%;
 }
 
 .github:hover{
-	box-shadow: inset 0 0 0 1000px rgba(255,165,0, .6);
+	box-shadow: inset 0 0 0 1000px rgba(255,165,0, .75);
 }
 
 .github-content{
@@ -184,28 +188,24 @@ a .fa:hover{
 
 .contact {
 	background-color: #ffd700;
-	box-shadow: inset 0 0 0 1000px rgba(255,215,0, .7);
+	box-shadow: inset 0 0 0 1000px rgba(255,215,0, .6);
 	background: url(images/contact.png); 
 	background-size: cover;
 	width: 62%;
 }
 
 .contact:hover{
-	box-shadow: inset 0 0 0 1000px rgba(255,215,0, .6);
+	box-shadow: inset 0 0 0 1000px rgba(255,215,0, .75);
 }
 
-.block:hover, .fa-github:hover{
+.clickable:hover, .fa-github:hover, .clicked:hover{
 	cursor: pointer;
-}
-
-.content:hover {
-	cursor: auto;
 }
 
 /*Projects Styling*/
 
 .projects {
-	box-shadow: inset 0 0 0 1000px rgba(184,127,237, .7);
+	box-shadow: inset 0 0 0 1000px rgba(184,127,237, .6);
 	background: url(images/projects.png); 
 	background-size: cover;
 	width: 67%;
@@ -213,7 +213,7 @@ a .fa:hover{
 }
 
 .projects:hover{
-	box-shadow: inset 0 0 0 1000px rgba(184,127,237, .5);
+	box-shadow: inset 0 0 0 1000px rgba(184,127,237, .75);
 }
 
 .projects-content {
@@ -242,25 +242,24 @@ a .fa:hover{
 }
 
 .darin-project {
-	box-shadow: inset 0 0 0 1000px rgba(110,76,142, .7);
+	box-shadow: inset 0 0 0 1000px rgba(110,76,142, .6);
 }
 
 .septa-project{
-	box-shadow: inset 0 0 0 1000px rgba(128,88,165, .7);
+	box-shadow: inset 0 0 0 1000px rgba(128,88,165, .6);
 }
 
 .parallax-project{
-	box-shadow: inset 0 0 0 1000px rgba(147,101,189, .7);
+	box-shadow: inset 0 0 0 1000px rgba(147,101,189, .6);
 }
 
 .jukebox-project{
-	box-shadow: inset 0 0 0 1000px rgba(165,114,213, .7);
+	box-shadow: inset 0 0 0 1000px rgba(165,114,213, .6);
 }
 
 .clock-project{
 	box-shadow: inset 0 0 0 1000px rgba(184,127,237, .3);
 }
-
 
 .project h2{
 	padding: 8% 0;
@@ -323,7 +322,6 @@ li{
 		font-size: 1.3em;
 		padding-top: 0;
 	}
-
 
 	.home {
 		width: 49.5%;
@@ -397,6 +395,7 @@ li{
 	.github .fa{
 		font-size: 16vw;
 		margin: 0 auto;
+		overflow: hidden;
 	}
 
 	.contact {
