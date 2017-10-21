@@ -14,7 +14,7 @@
     };
     head.appendChild(script);
   }
-    getScript('http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js',function(){
+    getScript('https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js',function(){
 
 			$(document).ready(function(){
 				var clicked = false;
